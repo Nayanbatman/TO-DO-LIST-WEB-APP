@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    /* background :linear-gradient(65deg, #FAA307, #E85D04); */
+    /* background-color: #DC2F02; */
+    background-color: #E85D04;
+    color: #571d09;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    max-width: 500px;
+    margin: 120px auto 0 auto;
+}
+
+.box1{
+    padding: 30px;
+    border-radius:20px; 
+    border: 3px solid #FFC01E;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+#number{
+height: 100px;
+width: 100px;
+background-color: #FFC01E;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
+font-weight: bold;
+}
+
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: #ffa938;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details{
+    width: 100%;
+}
+
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: #ef0101;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    border: 2px solid #FFC01E ;
+    border-radius: 10px;
+    background-color: #ffa938 ;
+    outline: none;
+    color: #571d09;
+    font-weight: 200;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #FFC01E;
+    border: 2px solid #FFC01E ;
+    color: #571d09;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+.taskitem{
+    display: flex;
+    background-color: #FFC01E;
+    padding: 10px;
+    border-radius: 10px;
+  justify-content: space-between;  
+  align-items: center; 
+}
+
+.taskitem i{
+    width: 44px;
+    height: 44px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.taskList{
+  display: flex;  
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;  
+  width: 100%;
+  list-style: none;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input{
+    width: 20px;
+    height: 20px;
+}
+
+.task.completed{
+    text-decoration: line-through;
+    color: #ef0101;
+}
